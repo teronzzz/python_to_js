@@ -22,7 +22,18 @@
         </div>
     </div>
 
-    <button onclick="transpile()">🚀 Скомпилировать</button>
+    <!-- Кнопка для ручной компиляции -->
+    <button onclick="transpile()">Скомпилировать</button>
+
+    <!-- Работа с файлами -->
+    <div class="file-actions">
+        <label class="file-label">
+            <input type="file" id="fileInput" accept=".py" onchange="loadFileToEditor()">
+            <span class="file-button">Выберите файл</span>
+        </label>
+        <span id="fileName" class="file-name">Файл не выбран</span>
+        <button onclick="downloadJS()" class="action-button">Скачать .js</button>
+    </div>
 </div>
 
 <script src="script.js"></script>

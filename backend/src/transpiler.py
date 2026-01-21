@@ -51,3 +51,4 @@ class Transpiler:
         except Exception as e:
             print(f"DEBUG: Error: {e}")  # ДЛЯ ОТЛАДКИ
             raise TranspilerError(f"Transpilation failed: {str(e)}")
+

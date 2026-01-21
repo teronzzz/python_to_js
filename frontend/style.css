@@ -66,3 +66,62 @@ button {
 button:hover {
     background: #00aacc;
 }
+
+.file-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.file-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Скрываем стандартное поле file */
+.file-label input[type="file"] {
+    display: none;
+}
+
+/* Кнопка выбора файла */
+.file-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.file-button:hover {
+    background-color: #45a049;
+}
+
+/* Название выбранного файла */
+.file-name {
+    font-style: italic;
+    color: #555;
+    min-width: 120px;
+}
+
+/* Обычные кнопки */
+.action-button {
+    padding: 8px 15px;
+    background-color: #008CBA;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.action-button:hover {
+    background-color: #007bb5;
+}
